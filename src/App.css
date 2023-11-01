@@ -1,38 +1,71 @@
+/* App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* HeroOne */
+h1 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* HeroBoxContainer */
+.HeroBoxContainer {
+  width: 1150px;
+  height: 850px;
+  background-color: #f3f7f8;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* InnerHeader */
+.inner-header {
+  height: 1/3;
+  background-image: url('./components/Blurry.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-header button {
+  background-color: #81aeab;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.inner-header button:hover {
+  background-color: #c5e9e7;
+}
+
+/* InnerText */
+.inner-text {
+  padding: 20px;
+  text-align: left;
+}
+
+/* InnerImage */
+.inner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.six-images-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.six-images-box img {
+  width: 205px;
+  height: 135px;
+}
+
+.six-images-box img p {
+  background-color: white;
+  height: 37px;
+  text-align: center;
 }
