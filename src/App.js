@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import './App.css';
 
@@ -38,23 +39,25 @@ function InnerText() {
   );
 }
 
-function InnerImage() {
+function SixImagesBox() {
+  const imageTitles = ["fields1", "fields2", "fields3", "fields4", "fields5", "fields6"];
+
   return (
-    <div className="inner-image">
-      <SixImagesBox />
+    <div className="six-images-box">
+      {imageTitles.map((title, index) => (
+        <div key={title} className={`image-box image-${index + 1}`}>
+          <img src={`./components/${title}.jpg`} alt={title} />
+          <p>{title}</p>
+        </div>
+      ))}
     </div>
   );
 }
 
-function SixImagesBox() {
+function InnerImage() {
   return (
-    <div className="six-images-box">
-      <img src="#" alt="Image 1" />
-      <img src="#" alt="Image 2" />
-      <img src="#" alt="Image 3" />
-      <img src="#" alt="Image 4" />
-      <img src="#" alt="Image 5" />
-      <img src="#" alt="Image 6" />
+    <div className="inner-image">
+      <SixImagesBox />
     </div>
   );
 }
