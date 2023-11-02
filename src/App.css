@@ -54,8 +54,10 @@ h1 {
 
 .six-images-box {
   display: grid;
+  background-color: #81aeab;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  width: 70%;
   gap: 10px;
 }
 
