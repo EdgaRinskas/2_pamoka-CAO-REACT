@@ -9,8 +9,9 @@ function HeroOne(props) {
 
   return (
     <div style={heroOneStyle}>
-      <h1>{props.title || 'Info hero'}</h1>
-      <h1>{props.subtitle || 'Info subtitle'}</h1>
+      <h1>{props.title || 'Praktika'}</h1>
+      <p>Tekstas</p>
+      <h2>{props.subtitle || 'Antras'}</h2>
     </div>
   );
 }
