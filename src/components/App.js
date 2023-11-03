@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import HeroOne from './HeroOne';
 import InnerHeader from './InnerHeader';
 import InnerText from './InnerText';

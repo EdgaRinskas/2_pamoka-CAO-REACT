@@ -48,26 +48,6 @@ h1 {
 /* InnerImage */
 .inner-image {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.six-images-box {
-  display: grid;
-  background-color: #81aeab;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  width: 70%;
-  gap: 10px;
-}
-
-.six-images-box img {
-  width: 205px;
-  height: 135px;
-}
-
-.six-images-box img p {
-  background-color: white;
-  height: 37px;
-  text-align: center;
+  justify-content: center;
 }

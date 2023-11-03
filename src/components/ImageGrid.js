@@ -12,9 +12,9 @@ const ImageGrid = () => {
 
   const containerStyle = {
     display: 'grid',
-    gridTemplateColumns: 'repeat(2, 205px)',
-    gridTemplateRows: 'repeat(3, 135px)',
-    gap: '5px',
+    gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+    gridTemplateRows: 'repeat(2, minmax(0, 1fr))',
+    gap: '5px',                                         
   };
 
   const imageStyle = {
